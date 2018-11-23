@@ -5,13 +5,13 @@
 
   <div class = "cocktail_description"><p><%= @cocktail.description %></p></div>
 
-  <% @cocktail.doses.each do |dose|%>
+  <div class ="dose_description_ingredient"><p><% @cocktail.doses.each do |dose|%>
   <%= dose.description %>
   <%= dose.ingredient.name %>
   <% end %>
+  </p></div>
 
-  <br>
-  <br>
+
   <div>
      <p class=" changebtn btn btn-primary btn-lg"> <%= link_to "Make a change on #{@cocktail.name.downcase}", edit_cocktail_path  %>
      </p>

@@ -26,9 +26,11 @@
 
 .cocktails{
   color: white;
+  font-weight: bold;
 }
 a {
   color:lightgrey;
+  font-weight: bold;
 }
 
 .cocktail_name {
@@ -44,6 +46,13 @@ a {
   left: 143px;
   padding: 42px
 }
+.dose_description_ingredient{
+  position:absolute;
+  top:60vh;
+  left:143px;
+  padding:42px
+}
+
 
 .changebtn {
   position:absolute;
@@ -62,5 +71,6 @@ a {
   top:80vh;
   left:600px;
 }
+
 
 

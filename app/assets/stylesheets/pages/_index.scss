@@ -31,6 +31,36 @@ a {
   color:lightgrey;
 }
 
-.changebtn {
-  margin:0 auto;
+.cocktail_name {
+  position: absolute;
+  top: 20vh;
+  left: 143px;
+  padding: 42px
 }
+
+.cocktail_description{
+  position: absolute;
+  top: 40vh;
+  left: 143px;
+  padding: 42px
+}
+
+.changebtn {
+  position:absolute;
+  top:80vh;
+  left:200px;
+}
+
+#addbtn{
+  position:absolute;
+  top:80vh;
+  left:600px;
+}
+
+.name-box{
+  position:absolute;
+  top:80vh;
+  left:600px;
+}
+
+

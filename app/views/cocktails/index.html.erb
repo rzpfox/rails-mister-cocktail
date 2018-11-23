@@ -5,8 +5,7 @@
     <h2><% @cocktails.each do |cocktail| %>
   <p class= "cocktails"><%= link_to cocktail.name.capitalize, cocktail_path(cocktail) %></p>
 <% end %></h2>
-    <a class="btn btn-primary btn-lg" <%= link_to "Create a new cocktail", new_cocktail_path(@cocktail)  %>
-    ></a>
+    <p class="btn btn-primary btn-lg"> <%= link_to "Create a new cocktail", new_cocktail_path(@cocktail)  %></p>
 
   </div>
 </div>

@@ -1,6 +1,6 @@
-// Import page-specific CSS files here.
-@import "home";
-
+// Place all the styles related to the cocktails controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
 .banner {
   color: white;
   text-align: center;
@@ -19,11 +19,12 @@
 .banner p {
   font-size: 25px;
   font-weight: lighter;
-  color: white;
-  opacity: 1;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
   margin-bottom: 30px;
 }
 
-.cocktails{
-  color: white;
+.cocktails {
+  font-size: 50px;
+  color: red;
 }

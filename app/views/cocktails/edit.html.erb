@@ -1,0 +1,6 @@
+<h1>Make edition on the cocktail</h1>
+<%= simple_form_for [@cocktail] do |f| %>
+  <%= f.input :name %>
+  <%= f.input :description %>
+  <%= f.submit "Submit", class: "btn btn-primary" %>
+<% end %>

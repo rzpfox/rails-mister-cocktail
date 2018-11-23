@@ -12,8 +12,17 @@
   </head>
 
   <body>
-    <%= yield %>
-    <%= javascript_include_tag "application" %>
-    <%= javascript_pack_tag "application" %>
+    <div><%= render "layouts/navbar" %>
+    </div>
+    <div>
+      <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://www.asia-bars.com/wp-content/uploads/2013/04/07-hong-kong-march_438.jpg');">
+      <%= yield %>
+      </div>
+      <div>
+        <%= render "layouts/footer" %>
+      </div>
+      <%= javascript_include_tag "application" %>
+      <%= javascript_pack_tag "application" %>
+      </div>
   </body>
 </html>

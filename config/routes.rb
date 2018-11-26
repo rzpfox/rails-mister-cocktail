@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+  root to: "cocktails#index"
   get 'doses/new'
   get 'doses/create'
   get 'doses/destroy'
@@ -6,6 +8,6 @@ Rails.application.routes.draw do
   get 'doses/create'
   get 'doses/delete'
   resources :cocktails do
-    resources :doses
+    resources :doses, shallow: true
   end
 end

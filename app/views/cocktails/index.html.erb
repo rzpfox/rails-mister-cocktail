@@ -12,19 +12,12 @@
 
 
 
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-sm-4">
-      <% @cocktails.each do |cocktail| %>
-      <%= link_to cocktail_path(cocktail) do %>
-         <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://chobolobo.spin-cdn.com/33/109/1779/image-crop/format_frozen_cocktails_curacao_liqueur_5a6b98097d8ec.jpg');">
-           <div class="card-category">
-              <%= cocktail.name.capitalize %>
-           </div>
-         </div>
-       <% end %>
-      <% end %>
 
-    </div>
+  <div class="container">
+    <%  @cocktails.each_slice(12) do |cocktail|%>
+      <div class="row">
+        <%= render "cocktails/card" %>
+      </div>
+    <% end %>
   </div>
-</div>
+
